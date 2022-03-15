@@ -10,7 +10,7 @@ const UserDetails = () => {
   if (!gists.length) return <LeadText message="There are no Gists for this user." />;
 
   return (
-    <div>
+    <div className="mt-4">
       {gists.map((item) => (
         <GistItem key={item.id} {...item} />
       ))}

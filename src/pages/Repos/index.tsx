@@ -10,7 +10,7 @@ const UserDetails = () => {
   if (!repos.length) return <LeadText message="There are no Repositories for this user." />;
 
   return (
-    <div>
+    <div className="mt-4">
       {repos.map((item) => (
         <RepoItem key={item.id} {...item} />
       ))}

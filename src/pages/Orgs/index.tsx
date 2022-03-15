@@ -10,7 +10,7 @@ const UserDetails = () => {
   if (!orgs.length) return <LeadText message="There are no Organizations for this user." />;
 
   return (
-    <div>
+    <div className="mt-4">
       {orgs.map((item) => (
         <OrgItem key={item.id} {...item} />
       ))}
