@@ -31,10 +31,12 @@ export type GistType = {
   id: string;
   description: string;
   comments: number;
+  files: Record<string, any>;
 };
 
 export type OrganizarionType = {
   id: number;
   login: string;
   description: string;
+  avatar_url: string;
 };

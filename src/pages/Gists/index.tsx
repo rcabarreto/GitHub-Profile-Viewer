@@ -18,13 +18,19 @@ const UserDetails = () => {
   );
 };
 
-const GistItem: React.FC<GistType> = ({ id, description }) => (
-  <div key={id} className="card mb-4 mt-4">
-    <div className="card-body">
-      <h5 className="card-title">{id}</h5>
-      <p className="card-text">{description}</p>
+const GistItem: React.FC<GistType> = ({ id, description, files }) => {
+  const fileArray = Object.keys(files);
+
+  return (
+    <div key={id} className="card mb-4 mt-4">
+      <div className="card-body">
+        {fileArray.map((file) => (
+          <h5 className="card-title">{file}</h5>
+        ))}
+        <p className="card-text">{description}</p>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default UserDetails;

@@ -25,10 +25,6 @@ const UserDataComponent: React.FC = () => {
       <div className="mb-3">
         <p className="mb-0">{user.bio}</p>
       </div>
-
-      <div className="p-4">
-        <h4 className="fst-italic">Archives</h4>
-      </div>
     </div>
   );
 };

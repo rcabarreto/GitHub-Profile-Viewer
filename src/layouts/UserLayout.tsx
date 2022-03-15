@@ -55,11 +55,11 @@ const UserLayout: React.FC = () => {
   return (
     !!user && (
       <div className="row g-5">
-        <div className="col-md-4">
+        <div className="col-md-3">
           <UserData />
         </div>
 
-        <div className="col-md-8">
+        <div className="col-md-9">
           <ul className="nav nav-tabs">
             <CustomLink to={`/user/${username}`}>Profile</CustomLink>
             <CustomLink to={`/user/${username}/repos`}>Repos</CustomLink>

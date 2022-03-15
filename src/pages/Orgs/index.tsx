@@ -18,11 +18,18 @@ const UserDetails = () => {
   );
 };
 
-const OrgItem: React.FC<OrganizarionType> = ({ id, login, description }) => (
+const OrgItem: React.FC<OrganizarionType> = ({ id, login, description, avatar_url }) => (
   <div key={id} className="card mb-4 mt-4">
-    <div className="card-body">
-      <h5 className="card-title">{login}</h5>
-      <p className="card-text">{description}</p>
+    <div className="row">
+      <div className="col-md-2">
+        <img src={avatar_url} className="img-fluid rounded-start" alt="..." />
+      </div>
+      <div className="col-md-10">
+        <div className="card-body">
+          <h5 className="card-title">{login}</h5>
+          <p className="card-text">{description}</p>
+        </div>
+      </div>
     </div>
   </div>
 );
