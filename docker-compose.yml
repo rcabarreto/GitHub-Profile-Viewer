@@ -1,8 +1,8 @@
 version: '3.7'
 
 services:
-  greple:
-    container_name: greple
+  gpv:
+    container_name: gpv
     build:
       context: .
       dockerfile: Dockerfile
